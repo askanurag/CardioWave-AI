@@ -1,0 +1,45 @@
+{
+  "patient_id": "Unique synthetic group identifier; never used as predictor",
+  "target": {
+    "name": "simulated_rhythm_class",
+    "meaning": "Bernoulli label sampled from documented simulator, not a confirmed clinical endpoint"
+  },
+  "features": [
+    {
+      "name": "heart_rate",
+      "unit": "beats/min (simulated)",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    },
+    {
+      "name": "rr_variability",
+      "unit": "seconds (simulated)",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    },
+    {
+      "name": "qrs_width",
+      "unit": "seconds (simulated)",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    },
+    {
+      "name": "signal_noise",
+      "unit": "arbitrary",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    },
+    {
+      "name": "spectral_entropy",
+      "unit": "arbitrary",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    },
+    {
+      "name": "peak_amplitude",
+      "unit": "arbitrary",
+      "source": "Gaussian mathematical simulator",
+      "missing": "NaN allowed if column not entirely missing"
+    }
+  ]
+}
