@@ -1,0 +1,5 @@
+import json
+SPEC = json.loads('{"slug": "CardioWave_AI", "title": "CardioWave AI", "task": "Synthetic ECG rhythm classification", "features": ["heart_rate", "rr_variability", "qrs_width", "signal_noise", "spectral_entropy", "peak_amplitude"], "means": [78, 0.07, 0.09, 0.08, 0.45, 1.0], "scales": [18, 0.045, 0.025, 0.04, 0.15, 0.25], "weights": [0.5, 1.4, 0.8, 0.1, 0.4, 0.2], "label": "simulated_rhythm_class", "domain": "ecg", "description": "Extract features from ECG-like waveforms and compare classifiers for simulated regular versus irregular rhythm patterns.", "target": "simulated_rhythm_class", "provenance": "synthetic mathematical simulator; not real clinical data"}')
+FEATURES = SPEC["features"]
+TARGET = SPEC["target"]
+SEED = 42
