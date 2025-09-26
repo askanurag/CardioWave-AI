@@ -1,0 +1,54 @@
+{
+  "model": "logistic",
+  "provenance": {
+    "data_sha256": "010ff9335a75805c52e08ad750730bd9b35ea02d104323c14bdc55dd0f213756",
+    "seed": 42,
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "data_origin": "synthetic",
+    "clinical_validation": false
+  },
+  "validation": {
+    "auroc": 0.78125,
+    "average_precision": 0.5845238095238094,
+    "brier": 0.17188039041289707,
+    "balanced_accuracy": 0.8125,
+    "sensitivity": 1.0,
+    "specificity": 0.625,
+    "tp": 4,
+    "tn": 5,
+    "fp": 3,
+    "fn": 0,
+    "n": 12,
+    "threshold": 0.1
+  },
+  "test": {
+    "auroc": 0.875,
+    "average_precision": 0.8166666666666667,
+    "brier": 0.16565268156297758,
+    "balanced_accuracy": 0.8125,
+    "sensitivity": 1.0,
+    "specificity": 0.625,
+    "tp": 4,
+    "tn": 5,
+    "fp": 3,
+    "fn": 0,
+    "n": 12,
+    "threshold": 0.1
+  },
+  "split_sizes": {
+    "train": 36,
+    "validation": 12,
+    "test": 12
+  },
+  "domain_protocol": {
+    "description": "ECG-like recordings and injected regularity states",
+    "window_size": 5,
+    "stride_size": 5,
+    "unit": "seconds",
+    "patients": 10,
+    "clinical_validation": false,
+    "data_origin": "synthetic"
+  }
+}
